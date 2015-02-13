@@ -6,12 +6,14 @@
 	<title>UI.Router VIstas Anidadas</title>
 </head>
 <body>
+	<!-- Comprobando funcionaniento de Angular-->
 	{{2+2}}
 	<br>
 	<a title="Vista 1" ui-sref="vistaUno">Vista 1</a>
 	<br>
 	<a title="Vista 2" ui-sref="vistaDos">Vista 2</a>
 	<div ui-view></div>
+	<!-- Librerias desde mi CDN, personal ubicado el Localhost:8080 -->
 	<script type="text/javascript" src="http://localhost:8080/angular/cdn/angular.min.js"></script>
 	<script type="text/javascript" src="http://localhost:8080/angular/cdn/ui-route.min.js"></script>
 	<script src="vistas.module.js"></script>
