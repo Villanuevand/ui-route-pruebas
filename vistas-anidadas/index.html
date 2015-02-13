@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es" data-ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UI.Router VIstas Anidadas</title>
+</head>
+<body>
+	{{2+2}}
+	<br>
+	<a title="Vista 1" ui-sref="vistaUno">Vista 1</a>
+	<br>
+	<a title="Vista 2" ui-sref="vistaDos">Vista 2</a>
+	<div ui-view></div>
+	<script type="text/javascript" src="http://localhost:8080/angular/cdn/angular.min.js"></script>
+	<script type="text/javascript" src="http://localhost:8080/angular/cdn/ui-route.min.js"></script>
+	<script src="vistas.module.js"></script>
+	<script src="vistas.routes.js"></script>
+	<script src="vistaUno/vistauno.controller.js"></script>
+	<script src="vistaDos/vistados.controller.js"></script>
+</body>
+</html>
